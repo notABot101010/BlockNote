@@ -4,7 +4,7 @@ import { createExtension } from "../../editor/BlockNoteExtension.js";
 export const YUndoExtension = createExtension(({ editor }) => {
   return {
     key: "yUndo",
-    prosemirrorPlugins: [yUndoPlugin({ trackedOrigins: [editor] })],
+    prosemirrorPlugins: [yUndoPlugin()],
     dependsOn: ["yCursor", "ySync"],
     undoCommand: undoCommand,
     redoCommand: redoCommand,
