@@ -6,7 +6,6 @@ export const YUndoExtension = createExtension(({}) => {
   return {
     key: "yUndo",
     prosemirrorPlugins: [yUndoPlugin()],
-    dependsOn: ["ySync"],
     undoCommand: undoCommand,
     redoCommand: redoCommand,
   } as const;
