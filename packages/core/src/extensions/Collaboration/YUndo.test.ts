@@ -28,7 +28,6 @@ describe("YUndo with collaboration", () => {
     const initialDoc = editor.document;
     expect(initialDoc.length).toBeGreaterThanOrEqual(1);
     expect(initialDoc[0].type).toBe("paragraph");
-    const initialContent = initialDoc[0].content;
 
     // Make a change by inserting text
     editor.insertBlocks(

@@ -1,7 +1,8 @@
 import { redoCommand, undoCommand, yUndoPlugin } from "y-prosemirror";
 import { createExtension } from "../../editor/BlockNoteExtension.js";
 
-export const YUndoExtension = createExtension(() => {
+// eslint-disable-next-line no-empty-pattern
+export const YUndoExtension = createExtension(({}) => {
   return {
     key: "yUndo",
     prosemirrorPlugins: [yUndoPlugin()],

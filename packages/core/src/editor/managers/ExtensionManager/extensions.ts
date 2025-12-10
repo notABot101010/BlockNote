@@ -195,7 +195,7 @@ export function getDefaultExtensions(
       extensions.push(YCursorExtension(options.collaboration));
     }
     extensions.push(YSyncExtension(options.collaboration));
-    extensions.push(YUndoExtension());
+    extensions.push(YUndoExtension(options.collaboration));
     extensions.push(SchemaMigration(options.collaboration));
   } else {
     // YUndo is not compatible with ProseMirror's history plugin
